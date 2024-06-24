@@ -18,6 +18,7 @@ def checkIsDigit(input_str):
 def mkdir():
     infoLog = logging.getLogger('infoLog')
     path = "logs"
+    path1 = "images"
     if not os.path.exists(path):
         try:
             os.mkdir(path)
@@ -27,6 +28,15 @@ def mkdir():
             print(traceback.format_exc())
             infoLog.error(f"ERROR: Wasn't possible to create new folder \"{path}\"")
             infoLog.error(traceback.format_exc())
-
+    if not os.path.exists(path1):
+        try:
+            os.mkdir(path1)
+            infoLog.info(f"Path1 \"{path1}\" wasn't found. New folder named \"{path1}\" was created")
+        except Exception as Error:
+            print(f"ERROR: Wasn't possible to create new folder \"{path1}\"")
+            print(traceback.format_exc())
+            infoLog.error(f"ERROR: Wasn't possible to create new folder \"{path1}\"")
+            infoLog.error(traceback.format_exc())
+   
 def checkYNInput(stringInput):
     return stringInput.lower() == 'y' or stringInput.lower() == 'n'

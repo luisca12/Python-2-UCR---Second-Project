@@ -16,6 +16,10 @@ logConfiguration = {
             'level': 'INFO',
             'handlers': ['infoHandler']
         },
+        'userLog': {
+            'level': 'INFO',
+            'handlers': ['userHandler']
+        }
     },
     'handlers': {
         'debugHandler' : {
@@ -36,13 +40,22 @@ logConfiguration = {
             'level': 'INFO',
             'formatter' : 'logFormat'
         },
+        'userHandler' : {
+            'class': 'logging.FileHandler',
+            'filename': 'logs/modificationsList.txt',
+            'level': 'INFO',
+            'formatter' : 'userFormat'
+        }
     },
     'formatters': {
         'logFormat': {
             'format' : "%(asctime)s - %(levelname)s - %(message)s"
         },
+        'userFormat': {
+            'format' : "%(message)s"
+        },
         'completeFormat': {
             'format' : "%(asctime)s - %(levelname)s - %(message)s - %(pathname)s - %(module)s - %(lineno)d - %(process)d - %(thread)d"
-        },
+        }
     }
 }

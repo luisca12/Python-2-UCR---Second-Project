@@ -2,12 +2,11 @@ import os
 
 def greetingString():
     os.system("CLS")
-    print('  -------------------------------------------------- ')
-    print("   Welcome to the automatic download images program ")
-    print('  -------------------------------------------------- ')
+    print('\t-------------------------------------------------- ')
+    print("\t  Welcome to the automatic modify images program ")
+    print('\t-------------------------------------------------- ')
 
 def menuString():
-    os.system("CLS")
     print('  -------------------------------------------------------------- ')
     print('\t\tMenu - Please choose an option')
     print('\t\t  Only numbers are accepted')
