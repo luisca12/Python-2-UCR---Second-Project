@@ -114,7 +114,7 @@ def imageNumThread(token, imageNumInt):
                     
                 print(f"INFO: Successfully saved {len(images)} images. Images saved in folder \"images\"")
                 infoLog.info(f"Successfully saved {len(images)} images. Images saved in folder \"images\"")
-                os.system("PAUSE")       
+                # os.system("PAUSE")       
             except Exception as error:
                 print(f"ERROR: {error}, error code: {response.status_code}")
                 infoLog.error(f"Failed to obtain the images in the POST call(imageNum). Error code: {response.status_code}, {response.json()}, error:{error}")
