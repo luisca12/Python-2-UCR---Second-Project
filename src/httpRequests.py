@@ -15,7 +15,7 @@ from email import encoders
 from PIL import Image
 from io import BytesIO
 
-from log import logConfiguration
+from src.log import logConfiguration
 
 logging.config.dictConfig(logConfiguration)
 infoLog = logging.getLogger('infoLog')

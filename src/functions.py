@@ -1,4 +1,4 @@
-from log import logConfiguration
+from src.log import logConfiguration
 
 import traceback
 import os
