@@ -35,3 +35,75 @@ Once the Python script is loaded into your code editor program you will notice t
 - strings.py
 
 To run the program you will need to go to main.py and run it from there.
+#### Instructions to use it
+1. You will be prompted to the following menu where you have to first choose option #1 to choose the number of images to download.
+```
+        --------------------------------------------------
+          Welcome to the automatic modify images program
+        --------------------------------------------------
+  --------------------------------------------------------------
+                Menu - Please choose an option
+                  Only numbers are accepted
+  --------------------------------------------------------------
+  >             Paso #1. Escoger la cantidad de imagenes       <
+  >             Paso #2. Modificar las imagenes                <
+  >             Paso #3. Ingresar el correo destinatario       <
+  >             Paso #4. Salir                                 <
+  --------------------------------------------------------------
+
+Please choose a number from 1 to 4:
+```
+2. Once you have chosen the number of images to download, choose option number 2 to modify each individual image.
+```
+  -------------------------------------------------------------- 
+                Menu - Please choose an option
+                  Only numbers are accepted
+  -------------------------------------------------------------- 
+  >             Paso #1. Escoger la cantidad de imagenes       <
+  >             Paso #2. Modificar las imagenes                <
+  >             Paso #3. Ingresar el correo destinatario       <
+  >             Paso #4. Salir                                 <
+  --------------------------------------------------------------
+
+Please choose a number from 1 to 4: 2
+Do you want to modify the image number 1? (y/n):y
+Do you want to make the image black and white? (y/n):y
+Do you want to transpose the image? (y/n):y
+Do you want to blur the image? (y/n):y
+Do you want to rotate 90 degress the image? (y/n):y
+```
+3. Once you have modified all the images, please choose option number 3 to input the destination email to send the final images.
+```
+  --------------------------------------------------------------
+                Menu - Please choose an option
+                  Only numbers are accepted
+  --------------------------------------------------------------
+  >             Paso #1. Escoger la cantidad de imagenes       <
+  >             Paso #2. Modificar las imagenes                <
+  >             Paso #3. Ingresar el correo destinatario       <
+  >             Paso #4. Salir                                 <
+  --------------------------------------------------------------
+
+Please choose a number from 1 to 4: 3
+Please enter your email:example@gmail.com
+```
+4. Please repeat this process to download/modify more images, otherwise, please choose option 4 to exit the program.
+
+### License
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
