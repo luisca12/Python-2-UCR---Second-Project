@@ -96,7 +96,7 @@ To run the unit tests inside this Python script please follow these steps:
 |-|-|
 Step 1|Search and open CMD
 Step 2|Using the command "cd" please navigate to where your code is, for example:<br><p align="center"><img src="https://www.wikihow.com/images/thumb/0/08/Change-Directories-in-Command-Prompt-Step-7-Version-2.jpg/v4-460px-Change-Directories-in-Command-Prompt-Step-7-Version-2.jpg.webp" alt="dir-image"></p><br>You may also use the command "dir" to view all the files inside the current directory<br><p align="center"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Comando_Dir_no_Prompt_do_Windows.png" alt="dir-image"></p>
-Step 3|Once you are inside the Python Script please run the following command <br>```python -m unittest discover -s tests```
+Step 3|Once you are inside the Python Script folder please copy and paste the following command <br>```python -m unittest discover -s tests```
 
 ### License
 Permission is hereby granted, free of charge, to any person obtaining a copy
