@@ -6,7 +6,7 @@ import logging.config
 def main():
     mkdir()
     from functions import checkIsDigit, checkYNInput
-    from strings import greetingString,menuString,inputErrorString,newUserString
+    from strings import greetingString,menuString,inputErrorString
     from log import logConfiguration
     from httpRequests import getToken, sendEmail, imageNumThread
     from imageModifications import blackWhite, transposeIMG, blurIMG, rotate90

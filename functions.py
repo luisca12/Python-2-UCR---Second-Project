@@ -7,6 +7,15 @@ import logging.config
 infoLog = logging.getLogger('infoLog')
 
 def checkIsDigit(input_str):
+    """
+    This function checks if the provided string is a digit.
+
+    **Args:**
+        input_str: The string to be checked.
+        
+    **Returns:**
+        bool: True if the string is a digit, False otherwise.
+    """
     try:
         infoLog.info(f"String successfully validated selection number {input_str}, from checkIsDigit function.")
         return input_str.strip().isdigit()
@@ -16,6 +25,13 @@ def checkIsDigit(input_str):
         infoLog.error(traceback.format_exc())
 
 def mkdir():
+    """
+    This function creates directories for logs and images if they do not already exist.
+
+    **Args:**
+        
+    **Returns:**
+    """
     infoLog = logging.getLogger('infoLog')
     path = "logs"
     path1 = "images"
@@ -39,4 +55,12 @@ def mkdir():
             infoLog.error(traceback.format_exc())
    
 def checkYNInput(stringInput):
+    """
+    This function checks if the provided string input is either 'y' or 'n', case insensitive.
+
+    **Args:**
+        stringInput: The string to be checked.
+    **Returns:**
+        bool: True if the string is 'y' or 'n' (case insensitive), False otherwise.
+    """
     return stringInput.lower() == 'y' or stringInput.lower() == 'n'

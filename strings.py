@@ -1,12 +1,26 @@
 import os
 
 def greetingString():
+    """
+    This function clears the console and prints a welcome message for the automatic modify images program.
+
+    **Args:**
+        
+    **Returns:**
+    """
     os.system("CLS")
     print('\t-------------------------------------------------- ')
     print("\t  Welcome to the automatic modify images program ")
     print('\t-------------------------------------------------- ')
 
 def menuString():
+    """
+    This function prints the menu options for the program.
+
+    **Args:**
+        
+    **Returns:**
+    """
     print('  -------------------------------------------------------------- ')
     print('\t\tMenu - Please choose an option')
     print('\t\t  Only numbers are accepted')
@@ -18,14 +32,14 @@ def menuString():
     print('  -------------------------------------------------------------- \n')
 
 def inputErrorString():
+    """
+    This function prints an error message when an invalid input is detected and pauses the system.
+
+    **Args:**
+        
+    **Returns:**
+    """
     print('  ------------------------------------------------- ')  
     print('>      INPUT ERROR: Only numbers are allowed       <')
     print('  ------------------------------------------------- ')
     os.system("PAUSE")
-
-def newUserString():
-    os.system("CLS")
-    print('  ------------------------------------------------- ')
-    print("           You have chosen to input a new user ")
-    print("          Please fill the following information")
-    print('  ------------------------------------------------- ')

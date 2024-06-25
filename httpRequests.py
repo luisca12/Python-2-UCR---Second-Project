@@ -26,6 +26,14 @@ username = 'user'
 password = 'python22024!'
 
 def getToken():
+    """
+    This function obtains an authentication token from the specified token URL.
+
+    **Args:**
+        
+    **Returns:**
+       The authentication token if successful, otherwise None.
+    """
     try:
         authentication = {
             'user': username,
@@ -51,6 +59,15 @@ def getToken():
         return None
 
 def downloadImage(newImageURL, imagePath):
+    """
+    This function downloads an image from a given URL and save it to the specified path.
+
+    **Args:**
+        newImageURL: The URL of the image to be downloaded.
+        imagePath: The path where the image will be saved.
+        
+    **Returns:**
+    """
     try:
         imageResponse = requests.get(newImageURL)
         if imageResponse.status_code == 200:
@@ -63,6 +80,15 @@ def downloadImage(newImageURL, imagePath):
         infoLog.info(f"Failed to download image: {newImageURL}, error message: {error}", traceback.format_exc())
 
 def imageNumThread(token, imageNumInt):
+    """
+    This function downloads a specified number of images using multithreading.
+
+    **Args:**
+        token: The authentication token.
+        imageNumInt: The number of images to download.
+        
+    **Returns:**
+    """
     token = token[1:-1]
     try:
         postHeaders = {
@@ -104,6 +130,14 @@ def imageNumThread(token, imageNumInt):
         infoLog.error(f"Failed to obtain the images in the POST call(imageNum). Error code: {response.status_code}, {response.json()}, error:{error}")
 
 def sendEmail(emailString):
+    """
+    This function sends an email with the modified images attached.
+
+    **Args:**
+        emailString: The recipient's email address.
+        
+    **Returns:**
+    """
     try:
         email = MIMEMultipart()
         email['From'] = 'Luis Alfaro <solera.luis12@gmail.com>'
@@ -177,6 +211,14 @@ System.
         infoLog.error(f"An unexpected error occurred. Error message: {error}\n", traceback.format_exc())
 
 def sendEmailThread(emailString):
+    """
+    This function sends an email with the modified images attached using a separate thread.
+
+    **Args:**
+        emailString: The recipient's email address.
+        
+    **Returns:**
+    """
     try:
         thread = threading.Thread(target=sendEmail, args=(emailString,))
         thread.start()
