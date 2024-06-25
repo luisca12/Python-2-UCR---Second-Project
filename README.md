@@ -1,9 +1,9 @@
 # Automatic Download/Modify Images Python Script
 This script is made to automatically download from 1 to 10 images and modify them as you wish.
-- [Requirements](###Requirements)
-- Installation
-- Use
-- License
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Use](#use)
+- [License](#license)
 
 ### Requirements
 This is a list of the libraries used in this code:
