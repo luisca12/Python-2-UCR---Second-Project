@@ -1,14 +1,15 @@
-from functions import mkdir, checkIsDigit, checkYNInput
-from strings import greetingString,menuString,inputErrorString,newUserString
-from log import logConfiguration
-from httpRequests import getToken, sendEmail, imageNumThread
-from imageModifications import blackWhite, transposeIMG, blurIMG, rotate90
+from functions import mkdir
 
 import os
 import logging.config
 
 def main():
     mkdir()
+    from functions import checkIsDigit, checkYNInput
+    from strings import greetingString,menuString,inputErrorString,newUserString
+    from log import logConfiguration
+    from httpRequests import getToken, sendEmail, imageNumThread
+    from imageModifications import blackWhite, transposeIMG, blurIMG, rotate90
     greetingString()
     logging.config.dictConfig(logConfiguration)
     infoLog = logging.getLogger('infoLog')
